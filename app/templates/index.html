@@ -49,6 +49,13 @@
                     .forminput input {
                       width: 100%;
                       border-radius: 3px;
+                      background-color: #FAFAFA;
+                      border: 1px solid #EEEEEE;
+                      padding: 5px 8px;
+                    }
+                    .submitbox {
+                      text-align: center;
+                      margin: 0 auto;
                     }
                     #submit {
                       text-align: center;
@@ -77,8 +84,9 @@
             {{ form.the_query(size=32) }}
         </p>
       </div>
-
+      <div class="submitbox">
         <p>{{ form.submit() }}</p>
+      </div>
       </div>
       </div>
         <script>
