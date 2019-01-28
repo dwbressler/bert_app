@@ -25,11 +25,11 @@
                     }
                     .nlcontainer {
                       padding: 50px 0 30px;
-                      background-color: aliceblue;
+                      background-color: #20B2AA;
                     }
                     .nlwrapper {
                       background-color: #ffffff;
-                      padding: 30px;
+                      padding: 50px 30px;
                       border-radius: 5px;
                       width: 80%;
                       margin: 0 auto;
@@ -38,9 +38,10 @@
                       text-align: center;
                     }
                     #the_wik_url {
-                      color: #000080;
+                      color: #2ECC71;
                       text-align: center;
                       font-weight: bold;
+                      padding: 20px 0px;
                     }
                     .forminput {
                       width: 90%;
@@ -56,12 +57,25 @@
                     .submitbox {
                       text-align: center;
                       margin: 0 auto;
+                      padding: 15px 0;
                     }
                     #submit {
                       text-align: center;
-                      border-radius: 3px;
-                      background-color: #2196F3;
+                      border-radius: 6px;
+                      background-color: #20B2AA;
                       color: #ffffff;
+                      padding: 5px 12px;
+                      cursor: pointer;
+                      transition: all 0.3s ease-in-out 0s;
+                    }
+                    #submit:hover {
+                      background-color: #008080;
+                    }
+                    hr.hrline {
+                      margin-top: 0px;
+                    }
+                    .answerbox {
+                      padding: 0px 30px;
                     }
                     </style>
 
@@ -113,9 +127,11 @@
                 } */
         </script>
 
-        <hr>
+        <hr class="hrline">
+        <div class="answerbox">
         <h3>{{ the_answer }}</h3>
         <p id="loading">Loading (10 sec) ... <br /> </p>
+      </div>
         <!-- <button type="button" onclick="grabTheData()">Click Me!</button> -->
         <!-- <button id="the_button" type="button" >Click Me!</button> -->
         <hr>
