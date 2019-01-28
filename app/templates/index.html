@@ -20,6 +20,15 @@
                     .container {
                       width: 80%;
                       margin: 0 auto;
+                      padding: 50px 0 30px;
+                    }
+                    .container h1 {
+                      text-align: center;
+                    }
+                    #the_wik_url {
+                      color: blue;
+                      text-align: center;
+                      font-weight: bold;
                     }
                     </style>
 
@@ -27,7 +36,7 @@
         <body onload="grabTheData()">
 {% block content %}
         <div class="container">
-        <h2>Wikipedia Natural Language Search</h2>
+        <h1>Wikipedia Natural Language Search</h1>
         <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p id = the_wik_url >{{ wik_url }}</p>
